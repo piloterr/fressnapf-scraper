@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.fressnapf.de/p/royal-canin-maxi-adult-15-kg-1003112004/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -232,7 +232,7 @@ response = requests.get(
     params={
         "query": "halsband",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
